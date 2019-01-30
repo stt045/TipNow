@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eqv-Lc-wD8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -87,7 +87,13 @@
                             <outletCollection property="gestureRecognizers" destination="v3s-0N-oIq" appends="YES" id="SXV-5i-Pkz"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="TipNow" id="pS1-vX-aeo"/>
+                    <navigationItem key="navigationItem" title="TipNow" id="pS1-vX-aeo">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="BPU-VI-xrp">
+                            <connections>
+                                <segue destination="ZOv-oM-yCB" kind="push" id="I3n-op-14d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="ODW-SF-7cx" id="Pqv-re-JAd"/>
                         <outlet property="tipControl" destination="FeS-AV-2Wo" id="7dQ-N2-L9o"/>
@@ -102,25 +108,42 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+            <point key="canvasLocation" x="2015.2" y="132.68365817091455"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="WYa-ik-Fw7">
+            <objects>
+                <viewController id="ZOv-oM-yCB" customClass="SettingsViewController" customModule="TipNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LSs-Es-xwy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pW2-yH-SBp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xQN-RO-A42"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lH-ba-zUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706" y="133"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Ldr-gx-DCW">
+        <scene sceneID="U1i-mk-0Ud">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eqv-Lc-wD8" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UTM-iX-KIt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Oe-WW-sG0">
+                    <navigationItem key="navigationItem" id="HSQ-GZ-gpE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d1j-sF-udi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="N1e-BT-Evs"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bgm-iS-QZR"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iwS-Xx-tKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Gh-Qd-FFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
