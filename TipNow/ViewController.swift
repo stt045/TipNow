@@ -14,12 +14,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "TipNow"
+        
+        // Automatically be in the bill amount text field when opening the application
+        billField.becomeFirstResponder()
+        
     }
-
 
     @IBAction func onTap(_ sender: Any) {
         // Code that will run when the user taps
