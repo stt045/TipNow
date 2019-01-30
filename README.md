@@ -4,7 +4,7 @@
 
 Submitted by: **Steven Tran**
 
-Time spent: **1** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
@@ -34,6 +34,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+- UIBarButtonItem for "settings" would not appear when running the application on the simulator
 
 ## License
 
