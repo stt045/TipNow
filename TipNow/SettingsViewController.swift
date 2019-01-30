@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var defaultTipControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

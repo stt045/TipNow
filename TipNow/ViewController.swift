@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         // Automatically be in the bill amount text field when opening the application
         billField.becomeFirstResponder()
         
+        // attemping to make UIBarButton show up
+        
     }
 
     @IBAction func onTap(_ sender: Any) {

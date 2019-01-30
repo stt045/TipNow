@@ -55,6 +55,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="u4T-hi-v4b"/>
+                                    <action selector="tipControl:" destination="iYg-Rb-mpm" eventType="valueChanged" id="zr1-NJ-rAx"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6H-Gx-Nlp">
@@ -102,6 +103,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="iYg-Rb-mpm" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="v3s-0N-oIq">
                     <connections>
                         <action selector="onTap:" destination="BYZ-38-t0r" id="Gnd-vU-sOt"/>
@@ -139,6 +141,9 @@
                         <viewLayoutGuide key="safeArea" id="pW2-yH-SBp"/>
                     </view>
                     <navigationItem key="navigationItem" id="pS3-PF-kDY"/>
+                    <connections>
+                        <outlet property="defaultTipControl" destination="POQ-uy-pTq" id="JYs-Ke-Yvj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lH-ba-zUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
