@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.title = "TipNow"
-        
+       
         // Automatically be in the bill amount text field when opening the application
         billField.becomeFirstResponder()
         

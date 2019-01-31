@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment version="4352" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -88,7 +89,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="TipNow" id="pS1-vX-aeo">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="1V8-j9-rf9">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" style="done" id="1V8-j9-rf9">
                             <connections>
                                 <segue destination="ZOv-oM-yCB" kind="show" id="JLK-4R-5Tq"/>
                             </connections>
@@ -128,6 +129,9 @@
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onChange:" destination="ZOv-oM-yCB" eventType="valueChanged" id="yIN-V6-yHA"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set Default Tip %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69u-qZ-IJv">
                                 <rect key="frame" x="110" y="99" width="155" height="21"/>

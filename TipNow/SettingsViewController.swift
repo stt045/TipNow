@@ -12,6 +12,8 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
     
+    let tipPercentages = [0.15, 0.18, 0.2]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,5 +30,5 @@ class SettingsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
